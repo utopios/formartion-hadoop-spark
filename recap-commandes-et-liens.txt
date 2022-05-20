@@ -8,3 +8,11 @@ docker exec -it <id_container> bash
 
 -- pour copier un dossier du host vers un conteneur
 docker cp source <id_container>:path
+
+--Correction Exercice 1
+
+- hdfs dfs -mkdir /logs => créer le dossier logs dans notre cluster hdfs
+- hdfs dfs -ls /logs => afficher le contenu du dossier logs à l'interieur du cluster.
+- hdfs dfs -put access_log.txt /logs => distribuer le ficher access_log.txt dans le cluster hdfs.
+- hdfs dfs -cat /logs/access_log.txt | head -n 50 => pour afficher les 50 premieres lignes du fichier.
+- hdfs dfs -rm /logs/access_log.txt => pour supprimer le fichier du cluster.
