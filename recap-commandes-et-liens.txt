@@ -7,4 +7,4 @@ https://www.docker.com/products/docker-desktop/
 docker exec -it <id_container> bash
 
 -- pour copier un dossier du host vers un conteneur
-docker  cp source <id_container>:path
+docker cp source <id_container>:path
