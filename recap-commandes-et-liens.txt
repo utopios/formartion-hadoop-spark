@@ -3,6 +3,8 @@ https://www.docker.com/products/docker-desktop/
 
 -- docker-compose up -d => Dans le dossier docker-hadoop
 
+-- docker-compose down => pour supprimer les conteneurs (dans le meme dossier que le fichier docker-compose)
+
 -- pour entrer dans un conteneur docker en bash (par exemple)
 docker exec -it <id_container> bash
 
@@ -16,3 +18,4 @@ docker cp source <id_container>:path
 - hdfs dfs -put access_log.txt /logs => distribuer le ficher access_log.txt dans le cluster hdfs.
 - hdfs dfs -cat /logs/access_log.txt | head -n 50 => pour afficher les 50 premieres lignes du fichier.
 - hdfs dfs -rm /logs/access_log.txt => pour supprimer le fichier du cluster.
+
