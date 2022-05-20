@@ -1,2 +1,4 @@
 -- Lien installation docker
 https://www.docker.com/products/docker-desktop/
+
+-- docker-compose up -d => Dans le dossier docker-hadoop
