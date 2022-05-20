@@ -5,3 +5,6 @@ https://www.docker.com/products/docker-desktop/
 
 -- pour entrer dans un conteneur docker en bash (par exemple)
 docker exec -it <id_container> bash
+
+-- pour copier un dossier du host vers un conteneur
+docker  cp source <id_container>:path
